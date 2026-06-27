@@ -1,0 +1,71 @@
+/* 1. RESETEO BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. VARIABLES DE COLOR (KISS: Manténlo simple) */
+:root {
+    --fondo-principal: #0a0a0c; /* Negro mate */
+    --fondo-secundario: #1a1a1c; /* Gris muy oscuro */
+    --rojo-gamer: #e60000; /* Rojo intenso estilo Cyberpuerta */
+    --texto-blanco: #ffffff;
+    --texto-gris: #a0a0a0;
+}
+
+/* 3. APLICACIÓN GLOBAL */
+body {
+    background-color: var(--fondo-principal);
+    color: var(--texto-blanco);
+}
+
+/* 4. HEADER PRINCIPAL */
+.main-header {
+    background-color: var(--fondo-principal);
+    border-bottom: 2px solid var(--rojo-gamer);
+    padding: 15px 40px;
+    
+    /* Magia de Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del Logo */
+.logo-container h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.logo-container span {
+    color: var(--rojo-gamer);
+}
+
+/* Estilos del Buscador */
+.search-container {
+    display: flex;
+    width: 40%;
+}
+.search-container input {
+    width: 100%;
+    padding: 8px 15px;
+    background-color: var(--fondo-secundario);
+    border: 1px solid var(--rojo-gamer);
+    color: var(--texto-blanco);
+    outline: none;
+}
+.search-container button {
+    padding: 8px 20px;
+    background-color: var(--rojo-gamer);
+    color: var(--texto-blanco);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos de Usuario/Carrito */
+.actions-container {
+    font-size: 14px;
+    color: var(--texto-gris);
+}
