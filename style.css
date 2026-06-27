@@ -64,8 +64,101 @@ body {
     font-weight: bold;
 }
 
-/* Estilos de Usuario/Carrito */
+/* Estilos de Usuario/Carrito (Actualizado para destacar) */
 .actions-container {
+    display: flex;
+    gap: 15px; /* Espacio entre las dos insignias */
+}
+
+.actions-container span {
+    background-color: var(--fondo-secundario);
+    border: 1px solid var(--rojo-gamer);
+    color: var(--texto-blanco);
+    padding: 8px 15px;
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 8px rgba(230, 0, 0, 0.3); /* Resplandor rojo sutil */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto al pasar el mouse por encima */
+.actions-container span:hover {
+    background-color: var(--rojo-gamer);
+    box-shadow: 0 0 15px rgba(230, 0, 0, 0.6);
+}
+
+/* 5. BARRA DE NAVEGACIÓN */
+.main-navbar {
+    background-color: var(--fondo-secundario);
+    border-bottom: 1px solid #333;
+}
+
+.main-navbar ul {
+    display: flex;
+    justify-content: center; /* Centra los enlaces */
+    list-style: none; /* Quita las viñetas/puntos */
+    padding: 12px 0;
+}
+
+.main-navbar li {
+    margin: 0 25px; /* Separación horizontal entre enlaces */
+}
+
+.main-navbar a {
+    text-decoration: none; /* Quita el subrayado azul por defecto */
+    color: var(--texto-blanco);
+    font-weight: bold;
     font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.main-navbar a:hover {
+    color: var(--rojo-gamer);
+}
+
+/* 6. CONTENIDO PRINCIPAL (ACERCA DE Y PREVIEW) */
+.about-and-preview {
+    max-width: 1200px; /* Evita que se estire demasiado en pantallas gigantes */
+    margin: 40px auto; /* Centra el bloque entero en la pantalla */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Espacio entre el Acerca De y el Objeto de prueba */
+}
+
+/* Panel de "Acerca de" */
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Centra verticalmente imagen y texto */
+    background-color: var(--fondo-secundario);
+    padding: 30px;
+    border-left: 5px solid var(--rojo-gamer); /* Acento visual a la izquierda */
+    border-radius: 0 8px 8px 0;
+}
+
+.about-image {
+    width: 45%;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+}
+
+.about-text {
+    width: 55%;
+    line-height: 1.6; /* Mejora la lectura del texto */
+}
+
+.about-text h3 {
+    color: var(--rojo-gamer);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.about-text p {
     color: var(--texto-gris);
+    margin-bottom: 15px;
 }
