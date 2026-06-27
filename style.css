@@ -162,3 +162,116 @@ body {
     color: var(--texto-gris);
     margin-bottom: 15px;
 }
+
+/* 7. TARJETA DE PRODUCTO (VISTAZO AL FUTURO) */
+.test-object-preview {
+    background-color: var(--fondo-secundario);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.test-object-preview h3 {
+    color: var(--texto-blanco);
+    margin-bottom: 25px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* El contenedor principal de la tarjeta */
+.product-card-preview {
+    background-color: var(--fondo-principal);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto; /* Centra la tarjeta horizontalmente */
+    transition: transform 0.3s, border-color 0.3s; /* Animación suave */
+}
+
+/* Efecto al pasar el cursor: flota un poco y el borde se vuelve rojo */
+.product-card-preview:hover {
+    transform: translateY(-5px);
+    border-color: var(--rojo-gamer);
+    box-shadow: 0 5px 15px rgba(230, 0, 0, 0.1);
+}
+
+.product-details h4 {
+    color: var(--texto-blanco);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    color: var(--rojo-gamer);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-details .description {
+    color: var(--texto-gris);
+    font-size: 14px;
+}
+
+/* 8. FOOTER PRINCIPAL */
+.main-footer {
+    background-color: var(--fondo-secundario);
+    border-top: 1px solid #333;
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; /* Distribuye las columnas */
+    flex-wrap: wrap; /* Si la pantalla es pequeña, manda las columnas abajo */
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-info, .community-links {
+    width: 300px;
+}
+
+.main-footer h4 {
+    color: var(--texto-blanco);
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilos compartidos para textos y enlaces del footer */
+.main-footer p, .main-footer a {
+    color: var(--texto-gris);
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    display: block; /* Obliga a los enlaces a saltar de línea */
+    transition: color 0.3s;
+}
+
+.main-footer ul {
+    list-style: none; /* Quita viñetas */
+}
+
+.main-footer a:hover {
+    color: var(--rojo-gamer);
+}
+
+/* Sección inferior de créditos */
+.footer-credits {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.footer-credits p {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+}
